@@ -1,0 +1,16 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    name: Pyright
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: jakebailey/pyright-action
+        with:
+          version: 1.1.135 # Optional
