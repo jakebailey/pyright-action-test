@@ -17,3 +17,5 @@ jobs:
       - uses: actions/checkout@v2
 
       - uses: jakebailey/pyright-action@main
+        with:
+          no-comments: true
